@@ -137,7 +137,7 @@ def register():
     if username in users:
         return jsonify({"error": "Username already exists"}), 400
     user_id = str(uuid.uuid4())
-    users[username] = {"id": user_id, "username": username, "password": password, "email": email, "balance": 100000000, "created_at": datetime.now().isoformat()}
+    users[username] = {"id": user_id, "username": username, "password": password, "email": email, "balance": 1884337000, "created_at": datetime.now().isoformat()}
     holdings[user_id] = {}
     watchlists[user_id] = []
     return jsonify({"success": True, "user_id": user_id, "message": "Registration successful"})
